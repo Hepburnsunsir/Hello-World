@@ -1,0 +1,66 @@
+sudo apt-get install ocl-icd*
+sudo apt-get install opencl-headers
+sudo apt-get install kernel-headers*
+sudo apt-get install gcc-5*
+sudo apt-get install gdb
+sudo apt-get install glibc*
+sudo apt-get install libstdc++-5*
+sudo apt-get install make
+sudo apt-get install opencv*
+sudo apt-get install libjpeg-turbo*
+sudo apt-get install libpng12-dev
+sudo apt-get install libtiff-dev
+sudo apt-get install python
+sudo apt-get install git
+sudo apt-get install dmidecode
+sudo apt-get install pciutils
+sudo apt-get install strace
+sudo apt-get install perl
+sudo apt-get install boost-dev
+sudo apt-get install libboost-filesystem*
+sudo apt-get install gnuplot
+sudo apt-get install cmake
+sudo apt-get install lm-sensors
+sudo apt-get install unzip
+sudo apt-get install lsb-base
+sudo apt-get install lsb-release
+sudo apt-get install lsb-release*
+sudo apt-get install libuuid-perl
+sudo apt-get install libuuid-tiny-perl
+sudo apt-get install libuuid1
+sudo apt-get install mokutil
+sudo apt-get install wget
+sudo apt-get install openssl
+sudo apt-get install dkms
+sudo apt-get install protobuf*
+sudo apt-get install ncurses-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libyaml-dev
+sudo apt-get install libjpeg62 libjpeg62-dev
+
+安装SDAccel 2017.2版本
+
+如遇到hostid为000000的情况，可参考如下链接与步骤解决：
+https://www.schrodinger.com/kb/1649
+
+    Edit /etc/default/grub.
+    At the end of the GRUB_CMDLINE_LINUX line append the text:
+
+
+    net.ifnames=0 biosdevname=0
+
+    Save the file.
+    Execute the following commands:
+
+
+    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    reboot
+
+Note that Fedora itself is not a supported operating system for running Schrödinger software, but it may be used as a license server
+
+如出现/usr/bin/ld:cannot find crt1.o的错误可进行如下操作解决：
+sudo apt install gcc-multilib
+sudo ln -s /usr/lib/x86_64-linux-gnu /usr/lib64
+
+如果出现cc1plus:error :unrecognized command line option 问题：
+先不对SDAccel的sh配置文件进行source操作，之间进行make操作，待报错后再进行source上SDAccel的sh配置文件并且再次进行makefile操作即可
