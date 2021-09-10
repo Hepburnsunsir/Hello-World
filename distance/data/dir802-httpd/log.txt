@@ -1,0 +1,109 @@
+
+ Parsing ./data/dir802-httpd/httpd_cfg.json ..
+DiGraph with 172 nodes and 419 edges
+['0x4037f0', 'ungetc', 'realloc', '0x404aec', 'malloc', 'fopen64', 'fprintf', 'free', 'strcasecmp', '0x403ba8', '0x403b18', 'getpwnam', '0x403e94', '0x403f38', 'strdup', '0x404858', 'memset', 'inet_aton', 'getaddrinfo', 'gai_strerror', 'freeaddrinfo', 'memcpy', 'fclose', '0x4094d4', 'strchr', 'time', 'strftime', 'open64', '0x409260', '0x409414', '0x401cf0', '__cxa_finalize', '__deregister_frame_info', '0x403724', '0x40e7f8', '0x40e70c', '0x403670', '0x406070', '0x405ee4', '0x409bfc', '0x40ff28', '0x4097b0', 'gettimeofday', 'asctime', 'sprintf', 'strlen', 'write', '0x4065f0', 'fcntl64', '0x4064e0', 'getsockname', 'getnameinfo', '0x4062e8', '0x405d10', 'accept', '__errno_location', 'getsockopt', 'close', '0x40849c', 'mkstemp64', 'fdopen', '0x407f30', '0x40b5ec', 'fstat64', '0x40b570', '0x40c974', '0x40b170', '0x40c8e0', '0x40c4b8', '0x40b45c', '0x40b374', '0x409110', '0x40894c', '0x405e60', '0x402480', '0x409d44', 'fork', 'setpgid', '0x409cec', 'setrlimit64', 'dup2', 'chdir', 'execve', '_exit', 'strtoul', 'inet_pton', 'tolower', 'gmtime', 'strcpy', '0x40732c', '0x40c540', 'strncmp', '0x40256c', '0x4074c0', '0x409708', 'waitpid', '0x40e930', '0x4060d0', 'poll', '0x407028', '0x406368', '0x4073e4', '0x40ecb4', 'read', 'strncasecmp', 'atoi', 'strtoull', '0x40d050', 'strrchr', 'strcmp', '0x40e630', '0x40ad70', 'strtoumax', '0x401e30', '0x40b6a8', 'sigemptyset', 'sigaction', '0x4095d0', 'dup', 'vsnprintf', 'strerror', 'fputc', 'getrusage', 'fputs', '0x401dc4', '__register_frame_info', '_Jv_RegisterClasses', '0x40272c', '0x406cac', '0x403c24', '0x403db4', 'crypt', '0x40abd0', '0x402890', 'sysinfo', 'getenv', '0x40eacc', 'socketpair', '0x409f00', 'vfprintf', 'perror', 'unlink', 'exit', 'snprintf', '0x409fd0', 'getpid', 'getopt', 'getrlimit64', 'socket', 'setsockopt', 'strncpy', 'bind', 'printf', 'if_nametoindex', 'ioctl', 'listen', 'chroot', 'umask', 'setsid', 'ftruncate64', 'getpgrp', '0x4085b4', 'remove', 'lseek64', '0x40cf98', 'atol', '0x408870', '0x401c90', '__uClibc_main', 'memmove', 'recvfrom', '0x40ff90'] [('0x4037f0', 'ungetc'), ('0x4037f0', 'realloc'), ('0x404aec', 'malloc'), ('0x404aec', 'fopen64'), ('0x404aec', 'fprintf'), ('0x404aec', 'free'), ('0x404aec', 'strcasecmp'), ('0x404aec', '0x403ba8'), ('0x404aec', '0x403b18'), ('0x404aec', '0x4037f0'), ('0x404aec', 'getpwnam'), ('0x404aec', '0x403e94'), ('0x404aec', '0x403f38'), ('0x404aec', 'strdup'), ('0x404aec', '0x404858'), ('0x404aec', 'memset'), ('0x404aec', 'inet_aton'), ('0x404aec', 'getaddrinfo'), ('0x404aec', 'gai_strerror'), ('0x404aec', 'freeaddrinfo'), ('0x404aec', 'memcpy'), ('0x404aec', 'realloc'), ('0x404aec', 'fclose'), ('0x403ba8', '0x4037f0'), ('0x403ba8', 'strdup'), ('0x403b18', '0x4037f0'), ('0x403b18', 'strtoul'), ('0x403e94', '0x4037f0'), ('0x403e94', 'strcasecmp'), ('0x403f38', 'malloc'), ('0x403f38', '0x4037f0'), ('0x403f38', 'strcasecmp'), ('0x403f38', 'strlen'), ('0x403f38', 'strdup'), ('0x403f38', '0x403c24'), ('0x403f38', 'getpwnam'), ('0x403f38', '0x403e94'), ('0x403f38', '0x403db4'), ('0x403f38', '0x403ba8'), ('0x403f38', '0x403b18'), ('0x404858', 'malloc'), ('0x404858', '0x4037f0'), ('0x404858', 'strcasecmp'), ('0x404858', '0x403b18'), ('0x404858', '0x403724'), ('0x404858', '0x403f38'), ('0x4094d4', 'strchr'), ('0x4094d4', 'time'), ('0x4094d4', 'strftime'), ('0x4094d4', 'open64'), ('0x4094d4', '0x409260'), ('0x4094d4', '0x409414'), ('0x409260', '__errno_location'), ('0x409260', 'asctime'), ('0x409260', 'sprintf'), ('0x409260', 'vsnprintf'), ('0x409260', 'write'), ('0x409260', 'close'), ('0x409414', '__errno_location'), ('0x409414', 'strerror'), ('0x409414', '0x409260'), ('0x401cf0', '__cxa_finalize'), ('0x401cf0', '__deregister_frame_info'), ('0x403724', 'malloc'), ('0x403724', 'strdup'), ('0x403724', '0x40e7f8'), ('0x40e7f8', 'strchr'), ('0x40e7f8', 'memcpy'), ('0x40e7f8', 'inet_pton'), ('0x40e7f8', 'tolower'), ('0x403670', '0x406070'), ('0x403670', '0x405ee4'), ('0x403670', '0x409bfc'), ('0x403670', '0x40ff28'), ('0x406070', 'malloc'), ('0x406070', '0x409260'), ('0x405ee4', 'malloc'), ('0x405ee4', '0x409260'), ('0x405ee4', '0x405e60'), ('0x405ee4', '0x405d10'), ('0x409bfc', 'malloc'), ('0x409bfc', '0x409260'), ('0x40ff28', 'malloc'), ('0x40ff28', '0x409260'), ('0x4097b0', '0x409260'), ('0x4097b0', 'gettimeofday'), ('0x4097b0', 'asctime'), ('0x4097b0', 'sprintf'), ('0x4097b0', 'strlen'), ('0x4097b0', 'memcpy'), ('0x4097b0', 'write'), ('0x4097b0', '0x409414'), ('0x4065f0', '0x409260'), ('0x4065f0', 'fcntl64'), ('0x4065f0', '0x4064e0'), ('0x4065f0', 'getsockname'), ('0x4065f0', '0x409414'), ('0x4065f0', 'getnameinfo'), ('0x4065f0', 'gai_strerror'), ('0x4065f0', '0x4062e8'), ('0x4065f0', '0x405d10'), ('0x4065f0', 'accept'), ('0x4065f0', '__errno_location'), ('0x4065f0', 'getsockopt'), ('0x4065f0', 'close'), ('0x4064e0', '0x4097b0'), ('0x4064e0', '0x409260'), ('0x4064e0', 'close'), ('0x4064e0', '0x405d10'), ('0x4062e8', '0x40b374'), ('0x4062e8', 'gettimeofday'), ('0x40849c', 'sprintf'), ('0x40849c', 'mkstemp64'), ('0x40849c', '0x409414'), ('0x40849c', 'fdopen'), ('0x40849c', 'gettimeofday'), ('0x40849c', 'fprintf'), ('0x40849c', '0x407f30'), ('0x407f30', 'fprintf'), ('0x407f30', 'fputc'), ('0x407f30', 'getrusage'), ('0x407f30', 'fputs'), ('0x40b5ec', '0x409260'), ('0x40b5ec', 'fcntl64'), ('0x40b5ec', 'fstat64'), ('0x40b5ec', '0x409414'), ('0x40b5ec', '0x40b570'), ('0x40b570', '0x409260'), ('0x40b570', 'close'), ('0x40c974', '0x409260'), ('0x40c974', '0x40b170'), ('0x40c974', '0x40c8e0'), ('0x40c974', '0x40c4b8'), ('0x40c974', 'sprintf'), ('0x40c8e0', 'gmtime'), ('0x40c8e0', '0x409260'), ('0x40c8e0', 'strcpy'), ('0x40c8e0', 'strftime'), ('0x40c4b8', 'vsnprintf'), ('0x40b45c', '0x409260'), ('0x409110', 'open64'), ('0x409110', '0x409260'), ('0x409110', '0x409414'), ('0x409110', 'fcntl64'), ('0x409110', 'fdopen'), ('0x409110', 'close'), ('0x409110', '0x40894c'), ('0x409110', 'fclose'), ('0x40894c', 'strchr'), ('0x40894c', 'atol'), ('0x40894c', 'strcmp'), ('0x40894c', 'strcpy'), ('0x40894c', '0x408870'), ('0x40894c', '0x409260'), ('0x40894c', 'snprintf'), ('0x405e60', 'malloc'), ('0x405e60', '0x409260'), ('0x402480', 'free'), ('0x409d44', 'fork'), ('0x409d44', '0x409260'), ('0x409d44', '0x409414'), ('0x409d44', 'setpgid'), ('0x409d44', '0x409cec'), ('0x409d44', 'setrlimit64'), ('0x409d44', 'dup2'), ('0x409d44', 'chdir'), ('0x409d44', 'execve'), ('0x409d44', '_exit'), ('0x409cec', 'sigemptyset'), ('0x409cec', 'sigaction'), ('0x40732c', '0x409260'), ('0x40732c', '0x4064e0'), ('0x40c540', 'strlen'), ('0x40c540', 'strncmp'), ('0x40c540', 'sprintf'), ('0x40c540', 'strchr'), ('0x40c540', 'getpwnam'), ('0x40c540', '0x409260'), ('0x40256c', 'realloc'), ('0x40256c', 'strdup'), ('0x40256c', 'strlen'), ('0x40256c', 'malloc'), ('0x40256c', 'memcpy'), ('0x4074c0', 'time'), ('0x4074c0', '0x409260'), ('0x4074c0', '0x409708'), ('0x4074c0', '0x4064e0'), ('0x4074c0', 'close'), ('0x4074c0', '__errno_location'), ('0x4074c0', 'waitpid'), ('0x4074c0', '0x409414'), ('0x4074c0', '0x40849c'), ('0x4074c0', '0x40e930'), ('0x4074c0', '0x4060d0'), ('0x4074c0', 'poll'), ('0x4074c0', '0x4065f0'), ('0x4074c0', '0x407028'), ('0x4074c0', '0x406368'), ('0x4074c0', '0x4073e4'), ('0x4074c0', 'write'), ('0x4074c0', '0x40ecb4'), ('0x4074c0', '0x40732c'), ('0x409708', 'dup'), ('0x409708', '0x4095d0'), ('0x4060d0', 'malloc'), ('0x4060d0', 'strcpy'), ('0x4060d0', 'sprintf'), ('0x4060d0', '0x409260'), ('0x4060d0', 'free'), ('0x407028', '0x409260'), ('0x407028', 'memmove'), ('0x407028', 'recvfrom'), ('0x407028', 'getnameinfo'), ('0x407028', 'gai_strerror'), ('0x407028', 'read'), ('0x407028', '__errno_location'), ('0x407028', '0x409414'), ('0x407028', '0x4064e0'), ('0x407028', '0x406cac'), ('0x406368', 'read'), ('0x406368', '0x409260'), ('0x406368', '0x409414'), ('0x4073e4', '0x4097b0'), ('0x4073e4', 'close'), ('0x4073e4', '0x4062e8'), ('0x4073e4', '0x405d10'), ('0x4073e4', '0x406cac'), ('0x40ecb4', '0x409260'), ('0x40ecb4', 'read'), ('0x40ecb4', '__errno_location'), ('0x40ecb4', 'strncasecmp'), ('0x40ecb4', 'strncmp'), ('0x40ecb4', '0x40c4b8'), ('0x40ecb4', 'atoi'), ('0x40ecb4', 'strtoull'), ('0x40ecb4', '0x40c8e0'), ('0x40ecb4', 'sprintf'), ('0x40ecb4', 'memcpy'), ('0x40ecb4', 'write'), ('0x40ecb4', '0x409414'), ('0x40ecb4', '0x4064e0'), ('0x40d050', '0x40b45c'), ('0x40d050', 'strchr'), ('0x40d050', 'strrchr'), ('0x40d050', 'strncmp'), ('0x40d050', 'strtoul'), ('0x40d050', 'strcasecmp'), ('0x40d050', 'strncasecmp'), ('0x40d050', '0x409260'), ('0x40d050', '0x40e7f8'), ('0x40d050', 'strcmp'), ('0x40d050', 'strlen'), ('0x40d050', 'strcpy'), ('0x40d050', 'memcpy'), ('0x40d050', '0x40e630'), ('0x40d050', 'strtoull'), ('0x40d050', '0x40ad70'), ('0x40d050', 'strtoumax'), ('0x40d050', '0x40c540'), ('0x40d050', '0x401e30'), ('0x40d050', 'sprintf'), ('0x40d050', '0x40b6a8'), ('0x40d050', '0x40c974'), ('0x40d050', '0x40b170'), ('0x40d050', '0x40c4b8'), ('0x401e30', 'open64'), ('0x401e30', '0x409260'), ('0x401e30', 'fcntl64'), ('0x401e30', 'fdopen'), ('0x401e30', 'strlen'), ('0x401e30', 'strchr'), ('0x401e30', 'strcmp'), ('0x401e30', 'crypt'), ('0x401e30', 'strcpy'), ('0x40b6a8', '0x409260'), ('0x40b6a8', 'strlen'), ('0x40b6a8', 'open64'), ('0x40b6a8', '__errno_location'), ('0x40b6a8', '0x409414'), ('0x40b6a8', '0x40b5ec'), ('0x40b6a8', 'close'), ('0x40b6a8', 'strcpy'), ('0x40b6a8', 'strrchr'), ('0x40b6a8', '0x40b570'), ('0x40b6a8', 'snprintf'), ('0x40b6a8', 'memcpy'), ('0x40b6a8', 'strcasecmp'), ('0x40b6a8', 'time'), ('0x40b6a8', '0x402890'), ('0x4095d0', 'strcmp'), ('0x4095d0', 'dup'), ('0x4095d0', '0x4094d4'), ('0x4095d0', 'dup2'), ('0x4095d0', 'close'), ('0x4095d0', 'fcntl64'), ('0x401dc4', '__register_frame_info'), ('0x401dc4', '_Jv_RegisterClasses'), ('0x40272c', 'realloc'), ('0x40272c', 'strlen'), ('0x40272c', 'malloc'), ('0x40272c', '0x40e70c'), ('0x40272c', 'free'), ('0x40272c', 'memcpy'), ('0x406cac', '0x409260'), ('0x406cac', 'gettimeofday'), ('0x406cac', '0x405d10'), ('0x406cac', '0x40d050'), ('0x406cac', 'lseek64'), ('0x406cac', '0x409414'), ('0x406cac', '0x406368'), ('0x406cac', '0x4064e0'), ('0x403c24', '0x4037f0'), ('0x403c24', 'strdup'), ('0x403c24', 'malloc'), ('0x403c24', 'strcasecmp'), ('0x403db4', '0x4037f0'), ('0x403db4', 'malloc'), ('0x403db4', 'strdup'), ('0x40abd0', 'open64'), ('0x40abd0', '0x409260'), ('0x40abd0', '0x409414'), ('0x40abd0', 'read'), ('0x40abd0', 'close'), ('0x40abd0', 'strchr'), ('0x402890', 'sysinfo'), ('0x402890', '0x409260'), ('0x402890', 'malloc'), ('0x402890', 'strcasecmp'), ('0x402890', 'strlen'), ('0x402890', 'memcpy'), ('0x402890', 'sprintf'), ('0x402890', 'realloc'), ('0x402890', 'free'), ('0x402890', '0x40256c'), ('0x402890', '0x40c540'), ('0x402890', 'getenv'), ('0x402890', 'strchr'), ('0x402890', '0x40272c'), ('0x402890', '0x409414'), ('0x402890', 'fcntl64'), ('0x402890', '0x4094d4'), ('0x402890', 'close'), ('0x402890', '0x402480'), ('0x402890', '0x409d44'), ('0x402890', '0x40eacc'), ('0x402890', 'socketpair'), ('0x40eacc', 'close'), ('0x40eacc', '0x409260'), ('0x40eacc', '0x4064e0'), ('0x40eacc', 'memmove'), ('0x40eacc', '0x405d10'), ('0x409f00', 'fprintf'), ('0x409f00', 'vfprintf'), ('0x409f00', 'fputc'), ('0x409f00', 'perror'), ('0x409f00', 'unlink'), ('0x409f00', 'exit'), ('0x409fd0', 'getpid'), ('0x409fd0', '0x409f00'), ('0x409fd0', 'getopt'), ('0x409fd0', 'fprintf'), ('0x409fd0', 'getrlimit64'), ('0x409fd0', 'setrlimit64'), ('0x409fd0', 'close'), ('0x409fd0', 'open64'), ('0x409fd0', 'dup'), ('0x409fd0', '0x404aec'), ('0x409fd0', 'fputs'), ('0x409fd0', 'socket'), ('0x409fd0', 'setsockopt'), ('0x409fd0', 'fcntl64'), ('0x409fd0', 'strncpy'), ('0x409fd0', 'bind'), ('0x409fd0', 'inet_pton'), ('0x409fd0', 'printf'), ('0x409fd0', 'memcpy'), ('0x409fd0', 'if_nametoindex'), ('0x409fd0', 'inet_aton'), ('0x409fd0', 'memset'), ('0x409fd0', 'strcpy'), ('0x409fd0', 'ioctl'), ('0x409fd0', 'listen'), ('0x409fd0', 'chroot'), ('0x409fd0', 'chdir'), ('0x409fd0', 'umask'), ('0x409fd0', 'time'), ('0x409fd0', '0x409708'), ('0x409fd0', 'dup2'), ('0x409fd0', 'fork'), ('0x409fd0', 'setsid'), ('0x409fd0', '_exit'), ('0x409fd0', '0x409cec'), ('0x409fd0', 'ftruncate64'), ('0x409fd0', 'getpgrp'), ('0x409fd0', 'sprintf'), ('0x409fd0', 'strlen'), ('0x409fd0', 'write'), ('0x409fd0', '0x403670'), ('0x409fd0', '0x4074c0'), ('0x409fd0', 'unlink'), ('0x4085b4', 'strcpy'), ('0x4085b4', 'mkstemp64'), ('0x4085b4', 'fcntl64'), ('0x4085b4', 'remove'), ('0x4085b4', '0x409260'), ('0x4085b4', 'dup'), ('0x4085b4', 'fdopen'), ('0x4085b4', '0x407f30'), ('0x4085b4', 'fclose'), ('0x4085b4', '0x409414'), ('0x4085b4', 'close'), ('0x4085b4', 'fstat64'), ('0x4085b4', 'lseek64'), ('0x40cf98', '0x409260'), ('0x40cf98', '0x40b570'), ('0x40cf98', '0x40c974'), ('0x40cf98', '0x4064e0'), ('0x40cf98', '0x405d10'), ('0x401c90', '__uClibc_main')]
+
+target function
+
+0x409d44
+
+
+call graph cg_distance
+
+0x409d44 1.0
+0x4074c0 7.0
+0x407028 6.0
+0x4073e4 6.0
+0x40d050 4.0
+0x40b6a8 3.0
+0x406cac 5.0
+0x402890 2.0
+0x409fd0 8.0
+
+ target blocks
+
+0x409ebc
+
+calculate cfg_distance for function 'sub_4037F0', '0x4037f0'.. 
+calculate cfg_distance for function 'config', '0x404aec'.. 
+calculate cfg_distance for function 'open_log', '0x4094d4'.. 
+calculate cfg_distance for function 'sub_401CF0', '0x401cf0'.. 
+calculate cfg_distance for function 'sub_403724', '0x403724'.. 
+calculate cfg_distance for function 'unescape_url_n', '0x40e70c'.. 
+calculate cfg_distance for function 'init_buffers', '0x403670'.. 
+calculate cfg_distance for function 'log_request', '0x4097b0'.. 
+calculate cfg_distance for function 'sub_4065F0', '0x4065f0'.. 
+calculate cfg_distance for function 'sub_404858', '0x404858'.. 
+calculate cfg_distance for function 'internal_dump', '0x40849c'.. 
+calculate cfg_distance for function 'sub_40B5EC', '0x40b5ec'.. 
+calculate cfg_distance for function 'sub_403BA8', '0x403ba8'.. 
+calculate cfg_distance for function 'sub_40C974', '0x40c974'.. 
+calculate cfg_distance for function 'sub_40B45C', '0x40b45c'.. 
+calculate cfg_distance for function 'init_request', '0x40b374'.. 
+calculate cfg_distance for function 'process_imap', '0x409110'.. 
+calculate cfg_distance for function 'sub_405E60', '0x405e60'.. 
+calculate cfg_distance for function 'sub_402480', '0x402480'.. 
+calculate cfg_distance for function 'sub_403E94', '0x403e94'.. 
+calculate cfg_distance for function 'spawn', '0x409d44'.. 
+0x409ebc 0
+calculate cfg_distance for function 'sub_403B18', '0x403b18'.. 
+calculate cfg_distance for function 'sanitize_host', '0x40e7f8'.. 
+calculate cfg_distance for function 'rfctime', '0x40c8e0'.. 
+calculate cfg_distance for function 'sub_40732C', '0x40732c'.. 
+calculate cfg_distance for function 'faketoreal', '0x40c540'.. 
+calculate cfg_distance for function 'sub_40256C', '0x40256c'.. 
+calculate cfg_distance for function 'httpd_main', '0x4074c0'.. 
+0x407c10 6.0
+0x407c38 6.0
+0x407cf0 6.0
+calculate cfg_distance for function 'pipe_run', '0x40ecb4'.. 
+calculate cfg_distance for function 'init_cgi_headers', '0x40ff28'.. 
+calculate cfg_distance for function 'process_request', '0x40d050'.. 
+0x40e468 3.0
+calculate cfg_distance for function 'sub_409CEC', '0x409cec'.. 
+calculate cfg_distance for function 'sub_4095D0', '0x4095d0'.. 
+calculate cfg_distance for function 'unescape_url', '0x40e630'.. 
+calculate cfg_distance for function 'init_logs', '0x409708'.. 
+calculate cfg_distance for function 'pool_print', '0x40c4b8'.. 
+calculate cfg_distance for function 'lerror', '0x409414'.. 
+calculate cfg_distance for function 'sub_407F30', '0x407f30'.. 
+calculate cfg_distance for function 'sub_401DC4', '0x401dc4'.. 
+calculate cfg_distance for function 'sub_40272C', '0x40272c'.. 
+calculate cfg_distance for function 'reinit_connection', '0x4073e4'.. 
+0x407498 5.0
+calculate cfg_distance for function 'sub_403F38', '0x403f38'.. 
+calculate cfg_distance for function 'webuserok', '0x401e30'.. 
+calculate cfg_distance for function 'init_log_buffer', '0x409bfc'.. 
+calculate cfg_distance for function 'process_redirect', '0x40abd0'.. 
+calculate cfg_distance for function 'init_pollfds', '0x406070'.. 
+calculate cfg_distance for function 'sub_406368', '0x406368'.. 
+calculate cfg_distance for function 'sub_4062E8', '0x4062e8'.. 
+calculate cfg_distance for function 'process_cgi', '0x402890'.. 
+0x403500 1.0
+calculate cfg_distance for function 'sub_40B570', '0x40b570'.. 
+calculate cfg_distance for function 'setup_child_pollfds', '0x40e930'.. 
+calculate cfg_distance for function 'sub_409F00', '0x409f00'.. 
+calculate cfg_distance for function 'sub_40B170', '0x40b170'.. 
+calculate cfg_distance for function 'set_connection_state', '0x405d10'.. 
+calculate cfg_distance for function 'sub_40AD70', '0x40ad70'.. 
+calculate cfg_distance for function 'sub_40B6A8', '0x40b6a8'.. 
+0x40c400 2.0
+calculate cfg_distance for function 'init_connections', '0x405ee4'.. 
+calculate cfg_distance for function 'log_d', '0x409260'.. 
+calculate cfg_distance for function 'main', '0x409fd0'.. 
+0x40ab6c 7.0
+calculate cfg_distance for function 'sub_403DB4', '0x403db4'.. 
+calculate cfg_distance for function 'process_dump', '0x4085b4'.. 
+calculate cfg_distance for function 'cgi_error', '0x40cf98'.. 
+calculate cfg_distance for function 'sub_406CAC', '0x406cac'.. 
+0x406f18 4.0
+calculate cfg_distance for function 'sub_40894C', '0x40894c'.. 
+calculate cfg_distance for function '_ftext', '0x401c90'.. 
+calculate cfg_distance for function 'sub_4060D0', '0x4060d0'.. 
+calculate cfg_distance for function 'sub_407028', '0x407028'.. 
+0x4072f0 5.0
+calculate cfg_distance for function 'sub_403C24', '0x403c24'.. 
+calculate cfg_distance for function 'close_connection', '0x4064e0'.. 
+calculate cfg_distance for function 'sub_408870', '0x408870'.. 
+calculate cfg_distance for function 'sub_40FF90', '0x40ff90'.. 
+calculate cfg_distance for function 'init_child', '0x40eacc'.. 

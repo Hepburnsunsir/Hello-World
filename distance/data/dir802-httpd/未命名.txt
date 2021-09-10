@@ -1,0 +1,5 @@
+git config --global user.name "Hepburnsunsir"
+git config --global user.email  "3463420596@qq.com"
+
+
+git config --list
