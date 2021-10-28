@@ -1,0 +1,15 @@
+networkx与graphviz结合使用
+
+1，安装环境
+python packet
+pip3 install graphviz
+pip3 install networkx-2.4
+ubuntu18 
+sudo apt install  graphviz
+
+2, 
+G图为networkx声明
+dot = to_pydot(G).to_string() #转化为dot字符串
+print(dot)
+src = Source(dot) #转化为 graphviz图数据
+src.view() #画图

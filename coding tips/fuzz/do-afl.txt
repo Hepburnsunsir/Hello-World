@@ -1,0 +1,56 @@
+core
+一，对LAVA数据集的测试
+
+https://blog.csdn.net/weixin_48505549/article/details/110945570?ops_request_misc=&request_id=&biz_id=102&utm_term=LAVA-M&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-110945570.pc_search_result_before_js&spm=1018.2226.3001.4187
+
+
+
+wget http://panda.moyix.net/~moyix/lava_corpus.tar.xz
+
+sudo apt-get install libacl1-dev
+
+export CC=afl-gcc
+export CXX=afl-g++
+
+##更改 sudo make install
+## 
+ ./validate.sh 
+
+
+afl-fuzz -m none -t 5000 -i inputs/ -o outputs coreutils-8.24-lava-safe/lava-install/bin/base64 -d @@
+
+base64 -d $input
+md5sum -c $input
+who $input
+uniq $input
+
+插桩编译--
+文件：
+afl-gcc -g -o afl_test afl_test.c
+C++语言使用 afl-g++
+项目：
+在Makefile中添加内容
+
+gcc/g++重新编译目标程序的方法是：
+CC=/path/to/afl/afl-gcc ./configure
+make clean all
+对于一个C++程序，要设置:
+CXX=/path/to/afl/afl-g++.
+
+或： export CC=$afl-gcc export CXX=$afl-g++
+对那些可以直接从stdin读取输入的目标程序来说，语法如下：
+$ ./afl-fuzz -i testcase_dir -o findings_dir /path/to/program […params…]
+对从文件读取输入的目标程序来说，要用“@@”，语法如下：
+$ ./afl-fuzz -i testcase_dir -o findings_dir /path/to/program @@
+
+sudo su
+echo core >/proc/sys/kernel/core_pattern
+
+LLVM Mode模式编译程序可以获得更快的Fuzzing速度，进入llvm_mode目录进行编译，之后使用afl-clang-fast构建序程序即可，
+$ cd llvm_mode
+$ apt-get install clang
+$ export LLVM_CONFIG=`which llvm-config` && make && cd ..
+$ ./configure --disable-shared CC="afl-clang-fast" CXX="afl-clang-fast++" 
+使用高版本的clang编译时会报错，换成clang-3.9后通过编译，如果你的系统默认安装的clang版本过高，可以安装多个版本然后使用update-alternatives切换。
+
+二，收集触发LAVA的测试输入，

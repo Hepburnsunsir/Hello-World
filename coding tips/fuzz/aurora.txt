@@ -1,0 +1,12 @@
+export AURORA_GIT_DIR=/home/stay/Desktop/aurora
+mkdir evaluation
+cd evaluation
+export EVAL_DIR=`pwd`
+export AFL_DIR=$EVAL_DIR/afl-fuzz
+export AFL_WORKDIR=$EVAL_DIR/afl-workdir
+export EVAL_DIR=`pwd`
+export AFL_DIR=$EVAL_DIR/afl-fuzz
+export AFL_WORKDIR=$EVAL_DIR/afl-workdir
+export PIN_ROOT="$(pwd)/pin-3.15-98253-gb56e429b1-gcc-linux"cd
+mkdir -p $EVAL_DIR/inputs/crashes
+mkdir -p $EVAL_DIR/inputs/non_crashes
