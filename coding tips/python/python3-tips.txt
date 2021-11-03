@@ -1,0 +1,3 @@
+if str is None:
+  print(“is nonetype”）
+str ==  "str  #字符串比较
