@@ -1,3 +1,7 @@
+NO 1.
 if str is None:
   print(“is nonetype”）
 str ==  "str  #字符串比较
+NO 2.
+ps -aux | grep qemu |awk '{print $2}'| xargs kill -9
+
